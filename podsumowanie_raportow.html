@@ -1,0 +1,297 @@
+
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        img { display: block; margin: 20px auto; max-width: 100%; }
+        h1, h2, h3 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Podsumowanie raportów</h1>
+    <h4>Liczba przeanalizowanych raportów: 271</h4>
+    <h4>Data wygenerowania raportu: </h4>
+    <h2>1. Mechanizmy NZK</h2>
+    <h3>Tabela mechanizmów i współwystąpień</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Nazwa</th>
+      <th>Wystąpienia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>asystolia</td>
+      <td>173</td>
+    </tr>
+    <tr>
+      <td>PEA</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>VF</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>PEA + asystolia</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>VF + asystolia</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>PEA + VF</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h3>Proporcje mechanizmów NZK</h3>
+    <img src="proporcje_mechanizmow.png" alt="Wykres" />
+
+    <h2>2. Czas trwania resuscytacji</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metryka</th>
+      <th>Wartość</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Najkrótszy czas resuscytacji</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Najdłuzszy czas resuscytacji</td>
+      <td>288.00</td>
+    </tr>
+    <tr>
+      <td>Średnia czasu resuscytacji</td>
+      <td>33.73</td>
+    </tr>
+    <tr>
+      <td>Mediana czasu resuscytacji</td>
+      <td>25.00</td>
+    </tr>
+    <tr>
+      <td>Odchylenie standardowe dla czasu resuscytacji</td>
+      <td>31.84</td>
+    </tr>
+    <tr>
+      <td>Procent raportów bez podanego czasu</td>
+      <td>50.18</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h2>3. Procedury resuscytacji</h2>
+    <h3>Leki</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Procedura</th>
+      <th>Wystąpienia</th>
+      <th>Proporcja [%]</th>
+      <th>ROSC [%]</th>
+      <th>Zgony [%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>adrenalina</td>
+      <td>176</td>
+      <td>64.94</td>
+      <td>42.05</td>
+      <td>59.09</td>
+    </tr>
+    <tr>
+      <td>inne leki</td>
+      <td>48</td>
+      <td>17.71</td>
+      <td>41.67</td>
+      <td>60.42</td>
+    </tr>
+    <tr>
+      <td>bikarbonat</td>
+      <td>37</td>
+      <td>13.65</td>
+      <td>40.54</td>
+      <td>59.46</td>
+    </tr>
+    <tr>
+      <td>amiodaron</td>
+      <td>12</td>
+      <td>4.43</td>
+      <td>75.00</td>
+      <td>25.00</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>Metody</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Procedura</th>
+      <th>Wystąpienia</th>
+      <th>Proporcja [%]</th>
+      <th>ROSC [%]</th>
+      <th>Zgony [%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>intubacja</td>
+      <td>247</td>
+      <td>91.14</td>
+      <td>40.89</td>
+      <td>60.73</td>
+    </tr>
+    <tr>
+      <td>masaż serca</td>
+      <td>227</td>
+      <td>83.76</td>
+      <td>38.33</td>
+      <td>62.56</td>
+    </tr>
+    <tr>
+      <td>wentylacja</td>
+      <td>90</td>
+      <td>33.21</td>
+      <td>43.33</td>
+      <td>57.78</td>
+    </tr>
+    <tr>
+      <td>defibrylacja</td>
+      <td>49</td>
+      <td>18.08</td>
+      <td>57.14</td>
+      <td>42.86</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>Urządzenia</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Procedura</th>
+      <th>Wystąpienia</th>
+      <th>Proporcja [%]</th>
+      <th>ROSC [%]</th>
+      <th>Zgony [%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ambu</td>
+      <td>90</td>
+      <td>33.21</td>
+      <td>43.33</td>
+      <td>57.78</td>
+    </tr>
+    <tr>
+      <td>lucas</td>
+      <td>61</td>
+      <td>22.51</td>
+      <td>31.15</td>
+      <td>68.85</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>Trzy najczęstsze współwystąpienia</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Współwystępowanie</th>
+      <th>Liczba</th>
+      <th>Proporcja [%]</th>
+      <th>ROSC [%]</th>
+      <th>Zgony [%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>intubacja + masaż serca</td>
+      <td>214</td>
+      <td>78.97</td>
+      <td>39.25</td>
+      <td>61.68</td>
+    </tr>
+    <tr>
+      <td>intubacja + wentylacja</td>
+      <td>90</td>
+      <td>33.21</td>
+      <td>43.33</td>
+      <td>57.78</td>
+    </tr>
+    <tr>
+      <td>masaż serca + wentylacja</td>
+      <td>85</td>
+      <td>31.37</td>
+      <td>42.35</td>
+      <td>58.82</td>
+    </tr>
+  </tbody>
+</table>
+    <img src="wykres_procedury.png" alt="Wykres" />
+
+    <h2>4. Wyniki resuscytacji</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Wynik resuscytacji</th>
+      <th>Wystąpienia</th>
+      <th>Proporcja [%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>zgon</td>
+      <td>163</td>
+      <td>60.15</td>
+    </tr>
+    <tr>
+      <td>ROSC</td>
+      <td>112</td>
+      <td>41.33</td>
+    </tr>
+  </tbody>
+</table>
+    <h3>Zależność wyników od mechanizmów NZK</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Mechanizm</th>
+      <th>Procent ROSC (%)</th>
+      <th>Procent zgonów (%)</th>
+      <th>Średni czas [min]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>asystolia</td>
+      <td>35.84</td>
+      <td>65.32</td>
+      <td>32.14</td>
+    </tr>
+    <tr>
+      <td>VF</td>
+      <td>61.36</td>
+      <td>38.64</td>
+      <td>50.72</td>
+    </tr>
+    <tr>
+      <td>PEA</td>
+      <td>36.84</td>
+      <td>65.26</td>
+      <td>37.35</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
